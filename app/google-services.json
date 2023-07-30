@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1057923358831",
+    "project_id": "a-vmessanger",
+    "storage_bucket": "a-vmessanger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057923358831:android:70c010dc180a3aba60ed9a",
+        "android_client_info": {
+          "package_name": "com.example.avmessanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057923358831-skdsebn6d6ah41jvfldrplgvbr3nkrag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0-COFENxPbAKg30vYh9S4Emr6eel6NUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057923358831-skdsebn6d6ah41jvfldrplgvbr3nkrag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

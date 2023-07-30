@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".chatwin">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimgg"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cameracircular"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2.60dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/recivername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="TechCoder av"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgadpter"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_below="@+id/ll1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="64dp"
+        android:padding="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58.50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2.60dp"
+        android:layout_marginTop="2.60dp"
+        android:layout_marginBottom="2.60dp"
+        android:layout_marginEnd="2.60dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45.50dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="6.50dp"
+        android:layout_marginEnd="9.10dp"
+        android:layout_marginTop="6.50dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/textmsg"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Type The Messages..."
+            android:paddingStart="17.00dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sendbtnn"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="6.50dp"
+            android:layout_marginStart="6.50dp"
+            android:layout_marginEnd="6.50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sendbut"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+</RelativeLayout>
